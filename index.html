@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rezaul Rafia Binte-Final Year Project</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navResponsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+<!-- navbar start -->
+
+  <nav class="navbar">
+  <div class="nav-left">
+    <div class="nav-brand">
+       <img src="img/logo.png" alt="Skinith Logo" class="logo-img" />
+    </div>
+  </div>
+
+  <div class="nav-center">
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html" >About Us</a>
+      <a href="treatment.html" >Treatments</a>
+      <a href="doctors.php" >Doctors</a>
+      <a href="contact.html" >Contact</a>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <a href="appointment.php" class="book-btn">BOOK APPOINTMENT</a>
+    <a href="https://wa.me/601133179934" target="_blank" class="whatsapp-nav">
+      <i class="fab fa-whatsapp" style="font-size:32px; color:#12c661;"></i>
+    </a>
+  </div>
+</nav>
+
+
+<!-- nav end -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <!-- <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Reveal Your Natural Beauty</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Advanced Aesthetic Laser Treatments</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Experience the latest in skin care technology. Safe, effective, and personalized treatments to help you glow from within.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Learn More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book Appointment</a>
+
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="students.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Confidence Starts with Care</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Glow with Confidence Every Day</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Join our clients who trust us for rejuvenating skin solutions and visible results. Your transformation begins here.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Discover Treatments</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Get Started</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Carousel End -->
+
+    <!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-spa text-primary mb-4"></i>
+                        <h5 class="mb-3">Laser Hair Removal</h5>
+                        <p>Safe and effective laser treatments to remove unwanted hair for smooth, glowing skin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-magic text-primary mb-4"></i>
+                        <h5 class="mb-3">Skin Rejuvenation</h5>
+                        <p>Restore your youthful radiance with our advanced skin tightening and rejuvenation therapies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-medkit text-primary mb-4"></i>
+                        <h5 class="mb-3">Acne & Scar Treatment</h5>
+                        <p>Reduce acne, scars, and pigmentation with personalized laser-based skincare solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-star text-primary mb-4"></i>
+                        <h5 class="mb-3">Anti-Aging Therapy</h5>
+                        <p>Smooth fine lines and revitalize your skin with our cutting-edge anti-aging treatments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+        
+
+    <!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="About Skinith" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3 custom-title">About Skinith</h6>
+                <h1 class="mb-4 custom-heading">Welcome to Skinith</h1>
+                <p class="mb-4">At Skinith, we believe in enhancing natural beauty through advanced aesthetic and laser treatments. Our clinic is a space where comfort meets innovation, delivering personalized skincare experiences.</p>
+                <p class="mb-4">We offer a range of expert services designed to rejuvenate, restore, and refresh your skin. Whether you're here for laser hair removal, facial treatments, or skin therapy, your beauty journey begins with us.</p>
+                <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Certified Specialists</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Advanced Laser Technology</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Customized Skin Plans</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Safe & Comfortable Environment</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Non-invasive Treatments</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Client Satisfaction Focused</p>
+                    </div>
+                </div>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="appointment.php">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+
+    <!-- Categories Start -->
+    <!-- <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
+                <h1 class="mb-5">The available Tutorial</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Digital Marketing</h5>
+                                    <small class="text-primary">40 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Graphic Design</h5>
+                                    <small class="text-primary">52 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/m.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Multimedia</h5>
+                                    <small class="text-primary">35 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                            <h5 class="m-0">Web Development</h5>
+                            <small class="text-primary">29 Courses</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Categories Start -->
+
+
+   <!-- Services Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Treatments</h6>
+            <h1 class="mb-5">Popular Packages</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-1.jpg" alt="Laser Hair Removal">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="appointment.php" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Contact</a>
+                            <a href="appointment.php" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Us</a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">RM199</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(500)</small>
+                        </div>
+                        <h5 class="mb-4">Full Body Laser Hair Removal</h5>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Dr. Amira</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>2 Hours</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>20 Clients</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-2.jpg" alt="Facial Glow Treatment">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="appointment.php" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Contact</a>
+                            <a href="appointment.php" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Us</a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">RM129</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(323)</small>
+                        </div>
+                        <h5 class="mb-4">Hydrating Facial Glow Treatment</h5>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Therapist Sara</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.5 Hours</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>25 Clients</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-3.jpg" alt="Pigmentation Laser">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="appointment.php" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Contact</a>
+                            <a href="appointment.php" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Us</a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">RM149</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(123)</small>
+                        </div>
+                        <h5 class="mb-4">Laser Pigmentation & Brightening</h5>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Dr. Farzana</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.5 Hours</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>15 Clients</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+
+   <!-- Team Start -->
+<!-- <div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Skinith Clinic Team</h6>
+            <h1 class="mb-5">Meet Our Expert Staff</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item bg-light">
+                    <div class="overflow-hidden team-member">
+                        <img class="img-fluid" src="img/dr-rafia.jpg" alt="Dr. Rafia Zayra">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                        <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                            <a class="btn btn-sm-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Dr. Rafia Zayra</h5>
+                        <small>Trichologist</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item bg-light">
+                    <div class="overflow-hidden team-member">
+                        <img class="img-fluid" src="img/dr-chong.jpg" alt="Dr. Chong Wei">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                        <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                            <a class="btn btn-sm-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Dr. Chong Wei</h5>
+                        <small>Cosmetic Surgeon</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item bg-light">
+                    <div class="overflow-hidden team-member">
+                        <img class="img-fluid" src="img/dr-sara.jpg" alt="Dr. Sara Khan">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                        <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                            <a class="btn btn-sm-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Dr. Sara Khan</h5>
+                        <small>Immunodermatologist</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item bg-light">
+                    <div class="overflow-hidden team-member">
+                        <img class="img-fluid" src="img/jessica-nurse.jpg" alt="Jessica Lim">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                        <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                            <a class="btn btn-sm-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Jessica Lim</h5>
+                        <small>Senior Nurse & Laser Specialist</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Team End -->
+
+    
+
+
+   <!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+            <h1 class="mb-5">What Our Clients Say</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/arjun sarma.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Aisha Rahman</h5>
+                <p>Client</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Skinith gave me the best laser hair removal experience. The staff was caring and professional. My skin feels amazing now!</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/kavya.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Sofia Lim</h5>
+                <p>Client</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">I had my skin rejuvenation done at Skinith. The results are fantastic, and the environment is clean and relaxing.</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/rohan.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Nora Zulkifli</h5>
+                <p>Client</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Highly recommend Skinith! The facial and laser treatments are very effective and handled with great care.</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/ananya.jpeg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Liyana Ahmad</h5>
+                <p>Client</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">The service was excellent from start to finish. I felt well taken care of, and my results were visible after just one session!</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/vikram.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Farah Nabila</h5>
+                <p>Client</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Skinith is my go-to clinic for skin treatments. The therapists are knowledgeable and made me feel comfortable throughout.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+
+  <!-- Footer Start -->
+   <div class="footer-wave" style="margin:0; padding:0;">
+  <svg viewBox="0 0 1440 100" width="100%" height="100" preserveAspectRatio="none" style="display:block;">
+    <defs>
+      <linearGradient id="footer-gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+        <stop offset="0%" stop-color="#8268bc"/>
+        <stop offset="100%" stop-color="#e6bada"/>
+      </linearGradient>
+    </defs>
+    <path 
+      d="M0,50 Q360,0 720,50 T1440,50 L1440,100 L0,100 Z" 
+      fill="url(#footer-gradient)"
+    />
+  </svg>
+</div>
+
+
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Quick Links</h4>
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact</a>
+                <a class="btn btn-link" href="treatment.html">Treatments</a>
+                <a class="btn btn-link" href="appointment.php">FAQs</a>
+                <a class="btn btn-link" href="appointment.php">Book Appointment</a>
+
+                <div class="d-flex pt-2">
+    <a class="btn btn-social btn-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+    <a class="btn btn-social btn-instagram" href="#"><i class="fab fa-instagram"></i></a>
+    <a class="btn btn-social btn-tiktok" href="#"><i class="fab fa-tiktok"></i></a>
+    <a class="btn btn-social btn-whatsapp" href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Skinith, Kuala Lumpur, Malaysia</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+60 11-3317 9934</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@skinith.com</p>
+                
+
+            </div>
+
+            <!-- Gallery -->
+<div class="col-lg-3 col-md-6">
+    <h4 class="text-white mb-3">Gallery</h4>
+    <div class="row g-2 pt-2">
+        <div class="col-4"><img class="img-fluid gallery-img" src="img/course-1.jpg" alt=""></div>
+        <div class="col-4"><img class="img-fluid gallery-img" src="img/course-2.jpg" alt=""></div>
+        <div class="col-4"><img class="img-fluid gallery-img" src="img/course-3.jpg" alt=""></div>
+        <div class="col-4"><img class="img-fluid gallery-img" src="img/course-2.jpg" alt=""></div>
+        <div class="col-4"><img class="img-fluid gallery-img" src="img/course-3.jpg" alt=""></div>
+        <div class="col-4"><img class="img-fluid gallery-img" src="img/course-1.jpg" alt=""></div>
+    </div>
+</div>
+
+
+      <!-- Newsletter -->
+<div class="col-lg-3 col-md-6">
+  <h4 class="text-white mb-3">Newsletter</h4>
+  <p>Subscribe to receive exclusive updates on beauty tips and skin treatment offers.</p>
+
+  <form id="newsletterForm" method="post" class="position-relative mx-auto" style="max-width: 400px;">
+    <input id="email" class="form-control border-0 w-100 py-3 ps-4 pe-5"
+           type="email" name="email" placeholder="Your email" required>
+    <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+      Subscribe
+    </button>
+  </form>
+  <div id="message" class="mt-2"></div>
+</div>
+
+    <!-- Copyright -->
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Skinith</a>, All Rights Reserved.<br><br>
+                    Designed by <a class="border-bottom" href="#">Rafia Binte Rezaul</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="index.html">Home</a>
+                        <a href="treatment.html">Treatments</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="appointment.php">FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/688f7c5259a58a19229cbff1/1j1o7r9eb';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<!-- <script>
+  document.getElementById('login').addEventListener('change', function() {
+    if(this.checked) window.location.href = 'login.php';
+  });
+  document.getElementById('signup').addEventListener('change', function() {
+    if(this.checked) window.location.href = 'signUp.php';
+  });
+</script> -->
+
+<script>
+$(function(){
+  $('#newsletterForm').on('submit', function(e){
+    e.preventDefault();
+
+    $.post('subscribe.php', $(this).serialize(), function(res){
+      res = $.trim(res);
+      if(res === 'success'){
+        $('#message').text('A notification has been sent to your email.').css('color','white');
+        $('#email').val('');
+        setTimeout(function(){
+          $('#message').fadeOut(300, function(){
+            $(this).text('').show();
+          });
+        }, 2500);
+      } else if(res === 'invalid' || res === 'invalid_email'){
+        $('#message').text('❌ Invalid email address.').css('color','crimson');
+      } else {
+        $('#message').text('❌ Something went wrong.').css('color','crimson');
+      }
+    });
+  });
+});
+</script>
+
+
+
+
+</body>
+
+</html>
