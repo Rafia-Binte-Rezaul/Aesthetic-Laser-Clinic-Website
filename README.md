@@ -10,17 +10,19 @@ Developed by **Rafia Binte Rezaul** as a **Final Year Project (FYP)** under the 
 1. [Abstract](#-abstract)
 2. [Problem Statement](#-problem-statement)
 3. [Key Features](#-key-features)
-4. [Software Development Methodology](#-software-development-methodology)
-5. [System Design & Database Architecture](#-system-design--database-architecture)
-6. [Technology Stack](#-technology-stack)
-7. [System Screenshots & UI Walkthrough](#-system-screenshots--ui-walkthrough)
-   - [Patient Portal](#patient-portal)
+4. [Project Structure & File Mapping](#-project-structure--file-mapping)
+5. [Software Development Methodology](#-software-development-methodology)
+6. [System Design & Database Architecture](#-system-design--database-architecture)
+7. [Technology Stack](#-technology-stack)
+8. [System Screenshots & UI Walkthrough](#-system-screenshots--ui-walkthrough)
+   - [Patient Portal (Client-Facing Pages)](#patient-portal-client-facing-pages)
    - [Doctor Dashboard](#doctor-dashboard)
-   - [Administration Panel](#administration-panel)
-8. [Installation & Local Setup](#-installation--local-setup)
-9. [Security Features](#-security-features)
-10. [Limitations & Future Enhancements](#-limitations--future-enhancements)
-11. [Authorship & Credits](#-authorship--credits)
+   - [Administration Panel & Analytics](#administration-panel--analytics)
+   - [Admin CRUD Operations](#admin-crud-operations)
+9. [Installation & Local Setup](#-installation--local-setup)
+10. [Security Features](#-security-features)
+11. [Limitations & Future Enhancements](#-limitations--future-enhancements)
+12. [Authorship & Credits](#-authorship--credits)
 
 ---
 
@@ -45,23 +47,45 @@ Skinith Aesthetic Laser Beauty Clinic previously relied on manual booking and sc
 ## 🚀 Key Features
 
 ### 👤 Patient Portal
-* **Dynamic Slot Booking:** Real-time checking of specialist availability using AJAX without page reloads.
-* **Secure Registration & Auth:** Secure signup, login, session protection, and password hashing.
+* **Dynamic Slot Booking:** Real-time checking of specialist availability using AJAX without page reloads (driven by [appointment.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/appointment.php)).
+* **Secure Registration & Auth:** Secure signup ([signUp.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/signUp.php)), login ([login.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/login.php)), session protection, and password hashing.
 * **Profile Management:** Edit profile details and view history of scheduled appointments.
-* **Live Support:** Integrated customer chat support directly from the homepage.
+* **Live Support:** Integrated customer chat support directly from the homepage ([index.html](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/index.html)).
 * **Email Notifications:** Instant confirmation emails sent via PHPMailer SMTP.
 
 ### 🥼 Doctor Dashboard
-* **Dynamic Roster:** View all appointments assigned to the specific doctor.
+* **Dynamic Roster:** View all appointments assigned to the specific doctor via the secure [doctorDashboard.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/doctorDashboard.php).
 * **Filtered Searches:** Filter appointments by client name, dates, or status.
 * **Profile & Bio:** Manage doctor profile photo, specialization information, and visibility.
 
 ### 🔑 Administration Panel
-* **Centralized Dashboard:** Real-time statistics showing active doctors, booked slots, and newsletter subscribers.
-* **Appointment Management:** Complete CRUD capabilities to add, edit, approve, or cancel appointments.
-* **Doctor Management:** Add new specialists, upload profile photos, and edit existing listings.
-* **Schedule Planner:** Set and delete doctor availability blocks and time slots.
-* **Newsletter & Contacts:** Monitor subscribers and client enquiries.
+* **Centralized Dashboard:** Real-time statistics showing active doctors, booked slots, and newsletter subscribers inside [adminDashboard.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/adminDashboard.php).
+* **Appointment Management:** Complete CRUD capabilities to add ([appointmentAdd.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/appointmentAdd.php)), edit ([appointmentEdit.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/appointmentEdit.php)), and delete ([appointmentDelete.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/appointmentDelete.php)) appointments.
+* **Doctor Management:** Add ([doctorAdd.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/doctorAdd.php)), edit ([doctorEdit.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/doctorEdit.php)), and delete ([doctorDelete.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/doctorDelete.php)) specialists.
+* **Schedule Planner:** Set and delete doctor availability blocks and time slots using controllers like [slotAdd.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/slotAdd.php), [slotEdit.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/slotEdit.php), and [slotDelete.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/slotDelete.php).
+* **Business Analytics:** Generate statistics and track appointments via [analytics.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/analytics.php).
+
+---
+
+## 📂 Project Structure & File Mapping
+
+Key database settings and application logic controllers are listed below. Click on any file to navigate directly:
+
+* ⚙️ **Configuration**:
+  * [config.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/config.php) - Database Connection Configuration (utilizes secure variables from `.env`).
+* 🌐 **Patient Portal**:
+  * [index.html](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/index.html) - Homepage
+  * [about.html](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/about.html) - About Us Page
+  * [treatment.html](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/treatment.html) - Treatment Page
+  * [contact.html](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/contact.html) - Contact Page
+  * [login.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/login.php) / [signUp.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/signUp.php) - User Access and Registration
+* 🥼 **Doctor Portal**:
+  * [doctorDashboard.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/doctorDashboard.php) - Doctor Roster and Appointment Management
+  * [doctorPanel.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/doctorPanel.php) - Doctor Navigation Hub
+* 🔑 **Admin Portal**:
+  * [adminDashboard.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/adminDashboard.php) - Main Admin Panel
+  * [analytics.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/analytics.php) - Business and Appointment Analytics
+  * [adminNav.php](file:///Applications/XAMPP/xamppfiles/htdocs/skinith1/adminNav.php) - Admin Panel Side and Top Navigation Bar
 
 ---
 
@@ -93,7 +117,7 @@ The system defines interactions for three main actors: Patients, Doctors, and Ad
 * **Doctor:** Viewing assigned appointments, updating patient consultation details.
 * **Admin:** Complete system oversight, CRUD control over doctors, schedules, and appointments.
 
-![Use Case Diagram](image18.png)
+![Use Case Diagram](screenshots/use-case-diagram.png)
 
 ### Entity-Relationship Diagram (ERD)
 The database structure is normalized to the **Third Normal Form (3NF)** to avoid redundancy:
@@ -102,7 +126,7 @@ The database structure is normalized to the **Third Normal Form (3NF)** to avoid
 * **schedule:** Holds slots representing doctor availability (`schedule_id`, `doctor_id`, `date_time`).
 * **appointments:** Connects users, doctors, and schedules together (`id`, `user_id`, `doctor_id`, `schedule_id`, `contact`, `remarks`).
 
-![Entity Relationship Diagram](image20.png)
+![Entity Relationship Diagram](screenshots/erd-diagram.png)
 
 ---
 
@@ -122,47 +146,99 @@ The database structure is normalized to the **Third Normal Form (3NF)** to avoid
 
 ## 📸 System Screenshots & UI Walkthrough
 
-### Patient Portal
+### Patient Portal (Client-Facing Pages)
 
-#### 🏠 1. Homepage & Services
-A modern, responsive hero section showcasing treatments, team of specialists, client reviews, and footer links.
-![Homepage](image42.png)
-![Footer and Testimonials](image104.png)
+#### 🏠 Homepage & Service Sections
+The homepage welcomes patients with a responsive hero section showcasing treatments, team of specialists, client reviews, and footer links.
+<p align="center">
+  <img src="screenshots/home.png" width="90%" alt="Homepage"/>
+</p>
 
-#### 🔑 2. Registration & Sign In
-Secure portals for client login and account creation.
-![Login Page](image29.png)
-![Sign Up Page](image103.png)
+#### ℹ️ About Us & Treatments
+Dedicated layouts explaining the clinic's background and listing cosmetic laser treatments.
+<p align="center">
+  <img src="screenshots/about-us.png" width="48%" alt="About Us"/>
+  <img src="screenshots/treatment-page.png" width="48%" alt="Treatments Page"/>
+</p>
 
-#### 📅 3. Appointment Booking
-Allows logged-in clients to fill in details, select a doctor, choose available slots dynamically updated by AJAX, and submit booking requests.
-![Booking Form](image110.png)
-![Email Confirmation](image81.png)
+#### 🔬 Services & Specialist Profiles
+Detailed views of dermatological services offered, alongside profiles of on-duty clinical specialists.
+<p align="center">
+  <img src="screenshots/service-page.png" width="48%" alt="Services Page"/>
+  <img src="screenshots/doctors-profile.png" width="48%" alt="Doctors Profile"/>
+</p>
+
+#### 🔑 Access Portals (Login & Registration)
+Secure login and signup pages for clinic patients.
+<p align="center">
+  <img src="screenshots/login.png" width="48%" alt="Login Page"/>
+  <img src="screenshots/signup.png" width="48%" alt="Sign Up Page"/>
+</p>
+
+#### 💬 Testimonials & Footer
+Client reviews and direct links to contact channels.
+<p align="center">
+  <img src="screenshots/testimonial-page.png" width="48%" alt="Testimonials"/>
+  <img src="screenshots/footer.png" width="48%" alt="Footer"/>
+</p>
 
 ---
 
 ### Doctor Dashboard
 
-#### 🥼 Doctor Panel
-Doctors can access their roster of patients, search scheduled consultations, and check details.
-![Doctor Dashboard 1](image95.png)
-![Doctor Dashboard 2](image96.png)
+#### 🥼 Practitioner Interface
+Doctors can access their assigned consultations, check client history, and manage their clinical schedules.
+<p align="center">
+  <img src="screenshots/doctor-dashboard-1.png" width="90%" alt="Doctor Dashboard Overview"/>
+</p>
+<p align="center">
+  <img src="screenshots/doctor-dashboard-2.png" width="48%" alt="Doctor Dashboard View 2"/>
+  <img src="screenshots/doctor-dashboard-3.png" width="48%" alt="Doctor Dashboard View 3"/>
+</p>
 
 ---
 
-### Administration Panel
+### Administration Panel & Analytics
 
-#### 📊 1. Analytics & Overview
-Provides administrators with stats on total appointments, doctor listings, schedule slots, and general analytics.
-![Admin Dashboard](image83.png)
-![Analytics Page](image94.png)
+#### 📊 Clinic Management & Analytics
+Provides clinic administrators with dynamic statistics on active doctors, scheduled consultation slots, and analytical reports.
+<p align="center">
+  <img src="screenshots/admin-dashboard.png" width="48%" alt="Admin Dashboard Overview"/>
+  <img src="screenshots/analytics-page.png" width="48%" alt="Analytics Page"/>
+</p>
 
-#### 🛠️ 2. Roster Management (CRUD)
-Screens for adding, viewing, editing, and deleting appointments, doctor listings, and slots.
-* **Appointment Roster:**
-  ![Appointment History](image84.png)
-* **Schedule Slots Planner:**
-  ![Schedule Slots](image91.png)
+#### 🗓️ Appointment History
+A comprehensive master roster tracking all pending, approved, and historic appointments.
+<p align="center">
+  <img src="screenshots/appointment-history.png" width="90%" alt="Appointment History"/>
+</p>
+
+---
+
+### Admin CRUD Operations
+
+Clinic administrators possess full CRUD controls to manage the schedule planner, doctor roster, and appointments.
+
+#### 👥 Doctor Management
+<p align="center">
+  <img src="screenshots/add-doctor.png" width="31%" alt="Add Doctor"/>
+  <img src="screenshots/edit-doctor.png" width="31%" alt="Edit Doctor"/>
+  <img src="screenshots/delete-doctor.png" width="31%" alt="Delete Doctor"/>
+</p>
+
+#### 📅 Appointment Scheduling
+<p align="center">
+  <img src="screenshots/add-appointment.png" width="31%" alt="Add Appointment"/>
+  <img src="screenshots/edit-appointment.png" width="31%" alt="Edit Appointment"/>
+  <img src="screenshots/delete-appointment.png" width="31%" alt="Delete Appointment"/>
+</p>
+
+#### ⏰ Slot & Schedule Planner
+<p align="center">
+  <img src="screenshots/add-schedule.png" width="31%" alt="Add Schedule Slot"/>
+  <img src="screenshots/edit-schedule.png" width="31%" alt="Edit Schedule Slot"/>
+  <img src="screenshots/delete-schedule.png" width="31%" alt="Delete Schedule Slot"/>
+</p>
 
 ---
 
@@ -212,7 +288,7 @@ Screens for adding, viewing, editing, and deleting appointments, doctor listings
 * **Prepared Statements:** Prevents SQL injection by using parameterized queries throughout PHP data actions.
 * **Role-Based Access Control (RBAC):** Restricts admin routes and doctor dashboard functions from standard client access using secure session variables.
 * **Credentials Hashing:** User passwords are secured using PHP's `password_hash()` (Bcrypt).
-* **Secure Environment Variables:** Sensative passwords and credentials are kept in `.env` and excluded from source control via `.gitignore`.
+* **Secure Environment Variables:** Sensitive passwords and credentials are kept in `.env` and excluded from source control via `.gitignore`.
 
 ---
 
