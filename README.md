@@ -117,6 +117,7 @@ The system defines interactions for three main actors: Patients, Doctors, and Ad
 * **Doctor:** Viewing assigned appointments, updating patient consultation details.
 * **Admin:** Complete system oversight, CRUD control over doctors, schedules, and appointments.
 
+![Use Case Diagram](use-case-diagram.png)
 
 ### Entity-Relationship Diagram (ERD)
 The database structure is normalized to the **Third Normal Form (3NF)** to avoid redundancy:
@@ -125,6 +126,7 @@ The database structure is normalized to the **Third Normal Form (3NF)** to avoid
 * **schedule:** Holds slots representing doctor availability (`schedule_id`, `doctor_id`, `date_time`).
 * **appointments:** Connects users, doctors, and schedules together (`id`, `user_id`, `doctor_id`, `schedule_id`, `contact`, `remarks`).
 
+![Entity Relationship Diagram](erd-diagram.png)
 
 ---
 
@@ -155,28 +157,28 @@ The homepage welcomes patients with a responsive hero section showcasing treatme
 #### ℹ️ About Us & Treatments
 Dedicated layouts explaining the clinic's background and listing cosmetic laser treatments.
 <p align="center">
-  <img src="about%20Us.png" width="48%" alt="About Us"/>
-  <img src="treatment%20Page.png" width="48%" alt="Treatments Page"/>
+  <img src="about-us.png" width="48%" alt="About Us"/>
+  <img src="treatment-page.png" width="48%" alt="Treatments Page"/>
 </p>
 
 #### 🔬 Services & Specialist Profiles
 Detailed views of dermatological services offered, alongside profiles of on-duty clinical specialists.
 <p align="center">
-  <img src="service%20Page.png" width="48%" alt="Services Page"/>
-  <img src="doctors%20Profile.png" width="48%" alt="Doctors Profile"/>
+  <img src="service-page.png" width="48%" alt="Services Page"/>
+  <img src="doctors-profile.png" width="48%" alt="Doctors Profile"/>
 </p>
 
 #### 🔑 Access Portals (Login & Registration)
 Secure login and signup pages for clinic patients.
 <p align="center">
-  <img src="login%20Page.png" width="48%" alt="Login Page"/>
-  <img src="sign%20Up.png" width="48%" alt="Sign Up Page"/>
+  <img src="login.png" width="48%" alt="Login Page"/>
+  <img src="signup.png" width="48%" alt="Sign Up Page"/>
 </p>
 
 #### 💬 Testimonials & Footer
 Client reviews and direct links to contact channels.
 <p align="center">
-  <img src="testimonial%20Page.png" width="48%" alt="Testimonials"/>
+  <img src="testimonial-page.png" width="48%" alt="Testimonials"/>
   <img src="footer.png" width="48%" alt="Footer"/>
 </p>
 
@@ -187,11 +189,11 @@ Client reviews and direct links to contact channels.
 #### 🥼 Practitioner Interface
 Doctors can access their assigned consultations, check client history, and manage their clinical schedules.
 <p align="center">
-  <img src="doctor%20Dashboard-1.png" width="90%" alt="Doctor Dashboard Overview"/>
+  <img src="doctor-dashboard-1.png" width="90%" alt="Doctor Dashboard Overview"/>
 </p>
 <p align="center">
-  <img src="doctor%20Dashboard-2.png" width="48%" alt="Doctor Dashboard View 2"/>
-  <img src="doctor%20Dashbiard-3.png" width="48%" alt="Doctor Dashboard View 3"/>
+  <img src="doctor-dashboard-2.png" width="48%" alt="Doctor Dashboard View 2"/>
+  <img src="doctor-dashboard-3.png" width="48%" alt="Doctor Dashboard View 3"/>
 </p>
 
 ---
@@ -201,14 +203,14 @@ Doctors can access their assigned consultations, check client history, and manag
 #### 📊 Clinic Management & Analytics
 Provides clinic administrators with dynamic statistics on active doctors, scheduled consultation slots, and analytical reports.
 <p align="center">
-  <img src="admin%20Dashboard.png" width="48%" alt="Admin Dashboard Overview"/>
-  <img src="analytics%20Page.png" width="48%" alt="Analytics Page"/>
+  <img src="admin-dashboard.png" width="48%" alt="Admin Dashboard Overview"/>
+  <img src="analytics-page.png" width="48%" alt="Analytics Page"/>
 </p>
 
 #### 🗓️ Appointment History
 A comprehensive master roster tracking all pending, approved, and historic appointments.
 <p align="center">
-  <img src="appointment%20History.png" width="90%" alt="Appointment History"/>
+  <img src="appointment-history.png" width="90%" alt="Appointment History"/>
 </p>
 
 ---
@@ -219,23 +221,23 @@ Clinic administrators possess full CRUD controls to manage the schedule planner,
 
 #### 👥 Doctor Management
 <p align="center">
-  <img src="add%20Doctor.png" width="31%" alt="Add Doctor"/>
-  <img src="edit%20Doctors.png" width="31%" alt="Edit Doctor"/>
-  <img src="delete%20Doctors.png" width="31%" alt="Delete Doctor"/>
+  <img src="add-doctor.png" width="31%" alt="Add Doctor"/>
+  <img src="edit-doctor.png" width="31%" alt="Edit Doctor"/>
+  <img src="delete-doctor.png" width="31%" alt="Delete Doctor"/>
 </p>
 
 #### 📅 Appointment Scheduling
 <p align="center">
-  <img src="add%20Appointment.png" width="31%" alt="Add Appointment"/>
-  <img src="edit%20Appointment.png" width="31%" alt="Edit Appointment"/>
-  <img src="delete%20Appointment.png" width="31%" alt="Delete Appointment"/>
+  <img src="add-appointment.png" width="31%" alt="Add Appointment"/>
+  <img src="edit-appointment.png" width="31%" alt="Edit Appointment"/>
+  <img src="delete-appointment.png" width="31%" alt="Delete Appointment"/>
 </p>
 
 #### ⏰ Slot & Schedule Planner
 <p align="center">
-  <img src="add%20Schedules.png" width="31%" alt="Add Schedule Slot"/>
-  <img src="edit%20Schedules.png" width="31%" alt="Edit Schedule Slot"/>
-  <img src="delete%20schedules.png" width="31%" alt="Delete Schedule Slot"/>
+  <img src="add-schedule.png" width="31%" alt="Add Schedule Slot"/>
+  <img src="edit-schedule.png" width="31%" alt="Edit Schedule Slot"/>
+  <img src="delete-schedule.png" width="31%" alt="Delete Schedule Slot"/>
 </p>
 
 ---
