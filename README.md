@@ -157,7 +157,7 @@ The homepage welcomes patients with a responsive hero section showcasing treatme
 #### ℹ️ About Us & Treatments
 Dedicated layouts explaining the clinic's background and listing cosmetic laser treatments.
 <p align="center">
-  <img src="screenshots/about-us.png" width="48%" alt="About Us"/>
+  <img src="about-us.png" width="48%" alt="About Us"/>
   <img src="screenshots/treatment-page.png" width="48%" alt="Treatments Page"/>
 </p>
 
