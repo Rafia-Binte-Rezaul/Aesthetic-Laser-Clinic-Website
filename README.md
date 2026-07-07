@@ -117,7 +117,6 @@ The system defines interactions for three main actors: Patients, Doctors, and Ad
 * **Doctor:** Viewing assigned appointments, updating patient consultation details.
 * **Admin:** Complete system oversight, CRUD control over doctors, schedules, and appointments.
 
-![Use Case Diagram](image18.png)
 
 ### Entity-Relationship Diagram (ERD)
 The database structure is normalized to the **Third Normal Form (3NF)** to avoid redundancy:
@@ -126,7 +125,6 @@ The database structure is normalized to the **Third Normal Form (3NF)** to avoid
 * **schedule:** Holds slots representing doctor availability (`schedule_id`, `doctor_id`, `date_time`).
 * **appointments:** Connects users, doctors, and schedules together (`id`, `user_id`, `doctor_id`, `schedule_id`, `contact`, `remarks`).
 
-![Entity Relationship Diagram](image20.png)
 
 ---
 
@@ -151,7 +149,7 @@ The database structure is normalized to the **Third Normal Form (3NF)** to avoid
 #### 🏠 Homepage & Service Sections
 The homepage welcomes patients with a responsive hero section showcasing treatments, team of specialists, client reviews, and footer links.
 <p align="center">
-  <img src="Home.png" width="90%" alt="Homepage"/>
+  <img src="home.png" width="90%" alt="Homepage"/>
 </p>
 
 #### ℹ️ About Us & Treatments
